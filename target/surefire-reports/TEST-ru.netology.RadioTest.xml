@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.RadioTest" time="2.585" tests="14" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.RadioTest" time="2.317" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\vita\.jdks\corretto-11.0.16.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\vita\AppData\Local\Temp\surefire3025890420119318249\surefirebooter5903874356335949095.jar C:\Users\vita\AppData\Local\Temp\surefire3025890420119318249 2022-10-10T02-12-39_152-jvmRun1 surefire15885516206039354388tmp surefire_0221920430044070846tmp"/>
+    <property name="sun.java.command" value="C:\Users\vita\AppData\Local\Temp\surefire11807469262220700413\surefirebooter12547081674391881948.jar C:\Users\vita\AppData\Local\Temp\surefire11807469262220700413 2022-10-11T17-08-46_888-jvmRun1 surefire159735607383155954tmp surefire_015683497092005759488tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\vita\IdeaProjects\homework_10.1\target\test-classes;C:\Users\vita\IdeaProjects\homework_10.1\target\classes;C:\Users\vita\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\junit-jupiter-5.9.0.jar;C:\Users\vita\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\vita\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\vita\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\vita\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vita\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.jar;C:\Users\vita\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\vita\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;C:\Users\vita\.m2\repository\org\testng\testng\7.6.1\testng-7.6.1.jar;C:\Users\vita\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\vita\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\vita\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\vita\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\vita\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\vita\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\vita\AppData\Local\Temp\surefire3025890420119318249\surefirebooter5903874356335949095.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\vita\AppData\Local\Temp\surefire11807469262220700413\surefirebooter12547081674391881948.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.16.1+9-LTS"/>
@@ -61,18 +61,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="certainVolume1" classname="ru.netology.RadioTest" time="0.05"/>
-  <testcase name="certainVolume2" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="certainVolume3" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="currentRadioStationNumber" classname="ru.netology.RadioTest" time="0.012"/>
-  <testcase name="currentRadioStationNumber1" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="currentRadioStationNumber2" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="nextStationNumber1" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="nextStationNumber2" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="prevStationNumber" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="currentRadioStationNumber1" classname="ru.netology.RadioTest" time="0.086"/>
+  <testcase name="currentRadioStationNumber2" classname="ru.netology.RadioTest" time="0.002"/>
+  <testcase name="currentRadioStationNumber3" classname="ru.netology.RadioTest" time="0.001"/>
+  <testcase name="nextStationNumber1" classname="ru.netology.RadioTest" time="0.001"/>
+  <testcase name="nextStationNumber2" classname="ru.netology.RadioTest" time="0.001"/>
+  <testcase name="prevStationNumber" classname="ru.netology.RadioTest" time="0.001"/>
   <testcase name="prevStationNumber1" classname="ru.netology.RadioTest" time="0.001"/>
-  <testcase name="setVolumeMax1" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="setVolumeMax2" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="setVolumeMin1" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="setVolumeMin2" classname="ru.netology.RadioTest" time="0.001"/>
+  <testcase name="test" classname="ru.netology.RadioTest" time="0.008"/>
+  <testcase name="test1" classname="ru.netology.RadioTest" time="0.001"/>
 </testsuite>

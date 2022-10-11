@@ -1,70 +1,106 @@
 package ru.netology;
 
 public class Radio {
-    private int radioStation = 0;
+    private int minRadioStation = 0;
+    private int maxRadioStation = 9;
+    private int currentRadioStation = minRadioStation;
 
-    private int volume = 5;
+    private int minVolume = 0;
+    private int maxVolume = 100;
+    private int currentVolume = minVolume;
 
-    public int getRadioStation() {
-        return radioStation;
+    public Radio(){
+        this.minRadioStation = minRadioStation;
+        this.maxRadioStation = maxRadioStation;
+        this.currentRadioStation = minRadioStation;
+
+        this.minVolume = minVolume;
+        this.maxVolume = maxVolume;
+        this.currentRadioStation = minVolume;
     }
 
-    public int getVolume() {
-        return volume;
+    public Radio(int size1, int size2) {
+        maxRadioStation = minRadioStation + size1 - 1;
+        maxVolume = minVolume + size2;
     }
+
+    public int getMinRadioStation() {
+        return minRadioStation;
+    }
+
+    public int getMinVolume() {
+        return minVolume;
+    }
+
+    public int getMaxRadioStation() {
+        return maxRadioStation;
+    }
+
+    public int getMaxVolume() {
+        return maxVolume;
+    }
+
+    public int getCurrentRadioStation() {
+        return currentRadioStation;
+    }
+
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
+
 
     // возможность выставлять номер радиостанции через прямое указание её номера
-    public void setRadioStation(int newSpecific) {
-        if (newSpecific > 9) {
+    public void setCurrentRadioStation(int newSpecific) {
+        if (newSpecific > maxRadioStation) {
             return;
         }
-        if (newSpecific < 0) {
+        if (newSpecific < minRadioStation) {
             return;
         }
-        radioStation = newSpecific;
+        currentRadioStation = newSpecific;
     }
 
     // выбор следующуй радиостанции
     public void nextRadioStation() {
-        if (radioStation == 9) {
-            radioStation = 0;
+        if (currentRadioStation == maxRadioStation) {
+            currentRadioStation = minRadioStation;
             return;
         }
 
-        radioStation += 1;
+        currentRadioStation += 1;
     }
 
     // выбор предыдущей радиостанции
     public void prevRadioStation() {
-        if (radioStation == 0) {
-            radioStation = 9;
+        if (currentRadioStation == minRadioStation) {
+            currentRadioStation = maxRadioStation;
             return;
         }
-        radioStation -= 1;
+        currentRadioStation -= 1;
     }
 
     // выбор определенного уровня громкости
     public void setVolume(int newSpecific) {
-        if (newSpecific > 10) {
-            newSpecific = 10;
+        if (newSpecific > maxVolume) {
+            newSpecific = maxVolume;
         }
-        if (newSpecific < 0) {
-            newSpecific = 0;
+        if (newSpecific < minVolume) {
+            newSpecific = minVolume;
         }
-        volume = newSpecific;
+        currentVolume = newSpecific;
     }
 
     // увеличение громкости
     public void increaseVolume() {
-        if (volume < 10) {
-            volume += 1;
+        if (currentVolume < maxVolume) {
+            currentVolume += 1;
         }
     }
 
     // уменьшение громкости
-    public void decreaceVolume() {
-        if (volume > 0) {
-            volume -= 1;
+    public void decreaseVolume() {
+        if (currentVolume > minVolume) {
+            currentVolume -= 1;
         }
     }
 }
