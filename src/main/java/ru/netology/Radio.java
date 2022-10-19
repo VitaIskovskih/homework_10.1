@@ -19,9 +19,8 @@ public class Radio {
         this.currentRadioStation = minVolume;
     }
 
-    public Radio(int size1, int size2) {
+    public Radio(int size1) {
         maxRadioStation = minRadioStation + size1 - 1;
-        maxVolume = minVolume + size2;
     }
 
     public int getMinRadioStation() {
@@ -79,7 +78,7 @@ public class Radio {
         currentRadioStation -= 1;
     }
 
-    // выбор определенного уровня громкости
+    // выбор уровня громкости
     public void setVolume(int newSpecific) {
         if (newSpecific > maxVolume) {
             newSpecific = maxVolume;
